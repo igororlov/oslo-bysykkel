@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Oslo Bysykkel App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="src/index.css">
   </head>
   <body>
+    <h1>Oslo Bysykkel stations</h1>
+    
+    <div class="container">
+      <input type="checkbox" id="hasBikes" name="hasBikes">
+      <label for="hasBikes"> Show only with available bikes</label><br>
+
+      <input type="checkbox" id="hasDocks" name="hasDocks">
+      <label for="hasDocks"> Show only with available docks</label><br>
       
-      <script src="/bundle.js"></script>
+      <h3>Totally <span id="totalCount">0</span>, last updated on <span id="lastUpdated">...</span>.</h3>
+      <ul id="stations" class="stations">
+      </ul>
+    </div>
+    <script src="/bundle.js"></script>
   </body>
 </html>
