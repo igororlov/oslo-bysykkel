@@ -27,3 +27,8 @@ https://gbfs.urbansharing.com/oslobysykkel.no/station_status.json
 Known issues:
 1. Favicon not displayed in dev mode.
 2. Single-file JS, didn't manage to split into ES6 modules in reasonable amount of time (something with Webpack config).
+
+---
+### Preview
+
+![Failed to load image...](public/preview_bysykkel.png "App preview")
