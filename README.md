@@ -8,9 +8,11 @@ Completely based on the following open API (Norwegian!): https://oslobysykkel.no
 
 Technology stack is vanilla HTML/CSS/JS packed by Webpack and running by node (express.js).
 
-Use `npm run dev` in root directory for dev run (supports hot reload).
+Use `npm run dev` in root directory for dev run (supports hot reload). Or `npm run start`.
 
-Use `npm run start` for production build.
+Use `npm run build` for production build.
+
+Use `npm run test` to run tests.
 
 
 ---

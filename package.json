@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "webpack serve --mode development --open",
-    "start": "webpack && node server.js"
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -24,8 +25,14 @@
     "express-favicon": "^2.0.1",
     "script-loader": "^0.7.2",
     "style-loader": "^2.0.0",
-    "webpack": "^5.13.0",
-    "webpack-cli": "^4.3.1",
     "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "jest": "^26.6.3",
+    "webpack": "^5.0.0-rc.6",
+    "webpack-cli": "^4.5.0"
   }
 }

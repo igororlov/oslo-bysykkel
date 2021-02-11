@@ -8,22 +8,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""/>
     <link rel="stylesheet" href="src/index.css">
   </head>
   <body>
     <h1>Oslo Bysykkel stations</h1>
-    
-    <div class="container">
-      <input type="checkbox" id="hasBikes" name="hasBikes">
-      <label for="hasBikes"> Show only with available bikes</label><br>
 
-      <input type="checkbox" id="hasDocks" name="hasDocks">
-      <label for="hasDocks"> Show only with available docks</label><br>
-      
-      <h3>Totally <span id="totalCount">0</span>, last updated on <span id="lastUpdated">...</span>.</h3>
-      <ul id="stations" class="stations">
-      </ul>
+    <div class="container">
+      <div class="container-column">
+        <input type="checkbox" id="hasBikes" name="hasBikes">
+        <label for="hasBikes"> Show only with available bikes</label><br>
+        <input type="checkbox" id="hasDocks" name="hasDocks">
+        <label for="hasDocks"> Show only with available docks</label><br>
+        <h3>Totally <span id="totalCount">0</span>, last updated on <span id="lastUpdated">...</span>.</h3>
+
+        <ul id="stations" class="stations"></ul>
+      </div>
+      <div class="container-column">
+        <div id="mapid" class="map-container"></div>
+      </div>
     </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
     <script src="/bundle.js"></script>
   </body>
 </html>
